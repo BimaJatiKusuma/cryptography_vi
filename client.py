@@ -83,12 +83,11 @@ if __name__ == "__main__":
     print(f"Alice's Public Key: {public_key}")
     print(f"Alice's Private Key: {private_key}")
 
-    # Enter Bob's public key manually (in real scenario, this should be done securely)
-    # bob_public_key = (ENTER_BOB_PUBLIC_KEY_HERE)
+    # ganti public key milik bob sesuai dengan yang terbaru
     bob_public_key = (5, 14941)
 
     client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    # client.connect(('BOB_IP_ADDRESS', 9999))
+    #ganti alamat ip sesuai dengan alamat ip milik bob
     client.connect(('192.168.0.107', 9999))
 
     while True:
